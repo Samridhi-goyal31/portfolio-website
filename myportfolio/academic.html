@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(161, 255, 200),pink,blueviolet);
+            }
+
+            .navigation {
+                width: 100%;
+                background-color:rgb(161, 255, 200);
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                text-align: center;
+                padding: 14px 20px;
+                color:gray;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: blue;
+            }
+
+            .h1 {
+                font-family: bungee shade;
+                text-align: center;
+                color: blue;
+                text-shadow: 15px 15px 10px lightslategrey;
+            }
+
+            .dropdown {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                background-repeat: no-repeat;
+                background-image: url("acad.png");
+                margin:150px;
+                margin-left:400px;
+                border: 1px solid black;
+                border-radius: 30px 0px;
+                height: 200px;
+                width: 235px;
+                animation: example;
+                animation-duration: 4s;
+
+            }
+
+            .dropdown:hover {
+                background-image: url("book.jpg");
+            }
+
+            @keyframes example {
+                from {
+                    background-image: url("acad.png")
+                }
+
+                to {
+                    background-image: url("book.jpg");
+                }
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-image:linear-gradient(to bottom right,#6E6E6DFF,#FAD0C9FF);
+                background-repeat: no-repeat;
+                margin-top: 300px;
+                height: 300px;
+                width: 600px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                padding: 12px 16px;
+                z-index: 1;
+                overflow: scroll;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .tb {
+                border-collapse: collapse;
+            }
+
+            .tb,
+            th,
+            td {
+                border: 1px solid blueviolet;
+            }
+
+            th,
+            td {
+                text-align: center;
+                height: 20px;
+                padding: 15px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <ul>
+                <li><a href="myportfolio.html">Home</a></li>
+                <li><a href="academic.html">Acadmeic Qualifiction</a></li>
+                <li><a href="MyProject.html">My Projects</a></li>
+            
+            </ul>
+
+        </div>
+        <h1 class="h1">My Academics </h1>
+    </header>
+
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <table class="tb">
+                <tr>
+                    <th>Course</th>
+                    <th>Institution</th>
+                    <th>University</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>B.Tech.</td>
+                    <td>Mandsaur University</td>
+                    <td>Mandsaur University</td>
+                    <td>2016-2020</td>
+                    <td>82.5%</td>
+                </tr>
+                <tr>
+                    <td>HSC(Science&Maths)</td>
+                    <td>Carmel Convent School,Neemuch</td>
+                    <td>CBSE</td>
+                    <td>2015-2016</td>
+                    <td>73.4%</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Carmel Convent School,Neemuch</td>
+                    <td>CBSE</td>
+                    <td>2013-2014</td>
+                    <td>8.4cgpa</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
